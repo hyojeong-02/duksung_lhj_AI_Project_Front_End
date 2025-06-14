@@ -1,18 +1,17 @@
 # 인터넷 기초[04] 과제2 - 나만의 인공지능 서비스
 
-## 개요
- - 서비스 명 : <span style="background-color:rgb(182,0,80)">덕성 오늘의 운세</span>
- - 서비스 설명 : 사용자로부터 **이름**과 **생년월일**을 입력받으면, <span style="background-color:rgb(182,0,80)">덕성 오늘의 운세</span>는 그날의 운세를 사용자에게 알려준다. 특히, 마지막에 희망을 주는 한 줄 격언을 함께 보내준다.
- - 서비스 접속 주소 : [https://hayunjong2025.github.io/duksung-fortune](https://hayunjong2025.github.io/duksung-fortune)
+## 🧾 개요
+- **서비스 명** : 오늘 뭐 먹지? - AI 식사 추천
+- **서비스 설명** : 사용자가 이름과 현재 기분을 입력하면, AI가 오늘 먹으면 좋을 음식을 추천해주고, 마지막에는 센스 있는 한 마디 멘트도 함께 전달한다.
+- **서비스 접속 주소** : [https://hyojeong-02.github.io/duksung_lhj_AI_Project_Front_End/](https://hyojeong-02.github.io/duksung_lhj_AI_Project_Front_End/)
 
-
-## 서비스 구성 요소(1) - Gemini API
-- <span style="background-color:rgb(182,0,80)">덕성 오늘의 운세</span>가 답변하는 하루의 운세는 구글의 LMM 모델인 Gemini의 API를 활용해 생성한다.
-- 활용 모델 : [Gemini-2.0-flash](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash?hl=ko)
-- 시스템 프롬프트 주안점
-  - 운세를 말해주는 인공지능에게 오랜 경력을 가진 사주팔자 전문가라고 역할을 부여했다.
-  - 답변은 너무 길지 않도록 제한했고
-  - 마지막에는 한 줄 격언을 추가하도록 지정했다.
+## ⚙️ 서비스 구성 요소(1) - Gemini API
+- AI가 추천하는 음식은 Google의 대형언어모델(Large Multimodal Model)인 Gemini API를 통해 생성된다.
+- **활용 모델** : `Gemini-1.5-flash`
+- **시스템 프롬프트 주안점**
+  - 사용자의 기분을 바탕으로 적절한 음식을 유머있고 친근하게 추천하도록 유도
+  - 문장은 부담스럽지 않도록 짧고 간결하게 구성
+  - 마지막에 위로 또는 응원의 한 마디를 추가하도록 설정
 
 ## 서비스 구성 요소(2) - 프론트엔드
 - <span style="background-color:rgb(182,0,80)">덕성 오늘의 운세</span> 서비스 페이지는 HTML, CSS, JavaScript를 사용하여 간단하게 구성하였다.
