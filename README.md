@@ -24,4 +24,4 @@
 ## 서비스 구성 요소(3) - 백엔드
 - 구글 Gemini API 호출을 위한 API 키가 노출되지 않도록, 프론트엔드의 요청을 받아서 Gemini API를 호출해주는 간단한 API 백엔드를 구성하였다.
 - 해당 백엔드 로직은 서버리스(Severless) 함수 기능을 제공하는 Vercel에 배포했다.
-- 코드 및 구현 내용은 [https://github.com/hayunjon2025/duksung-fortune-api](https://github.com/hayunjon2025/duksung-fortune-api)를 참고한다.
+- 코드 및 구현 내용은 [https://github.com/hyojeong-02/duksung_lhj_AI_Project_api](https://github.com/hyojeong-02/duksung_lhj_AI_Project_api)를 참고한다.
