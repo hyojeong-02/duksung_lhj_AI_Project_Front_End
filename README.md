@@ -10,7 +10,7 @@
 - AI가 추천하는 음식은 Google의 대형언어모델(Large Multimodal Model)인 Gemini API를 통해 생성된다.
 - **활용 모델** : `Gemini-2.0-flash`
 - **시스템 프롬프트 주안점**
-  - 사용자가 선택한 <u>음식 종류</u>, <u>시간대</u>, <u>날짜</u>를 바탕으로 적절한 음식을 유머있고 친근하게 추천하도록 유도
+  - 사용자가 선택한 음식 종류, 시간대, 날짜를 바탕으로 적절한 음식을 유머있고 친근하게 추천하도록 유도
   - 특히! 날짜별로 계절 추천 메뉴를 선택해줌
 
 
@@ -22,6 +22,7 @@
 
 
 ## 서비스 구성 요소(3) - 백엔드
-- 구글 Gemini API 호출을 위한 API 키가 노출되지 않도록, 프론트엔드의 요청을 받아서 Gemini API를 호출해주는 간단한 API 백엔드를 구성하였다.
-- 해당 백엔드 로직은 서버리스(Severless) 함수 기능을 제공하는 Vercel에 배포했다.
-- 코드 및 구현 내용은 [https://github.com/hyojeong-02/duksung_lhj_AI_Project_api](https://github.com/hyojeong-02/duksung_lhj_AI_Project_api)를 참고한다.
+- Gemini API 키 보호를 위해 별도의 백엔드 서버를 구현하고, 프론트엔드 요청을 중계하는 구조로 설계하였다.
+- 해당 백엔드는 Vercel의 서버리스 함수(Serverless Function) 기능을 이용해 배포하였다.
+- 구현 코드는 다음 저장소에서 확인할 수 있다:  
+  [https://github.com/hyojeong-02/duksung_lhj_AI_Project_api](https://github.com/hyojeong-02/duksung_lhj_AI_Project_api)
