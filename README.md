@@ -2,7 +2,7 @@
 
 ## 🧾 개요
 - **서비스 명** : 오늘 뭐 먹지? - AI 식사 추천
-- **서비스 설명** : 사용자가 음식 종류, 아침.점심.저녁 시간대, 날짜를 입력하면 AI가 오늘 먹으면 좋을 음식을 추천해준다.
+- **서비스 설명** : 사용자가 음식 종류, 아침•점심•저녁 시간대, 날짜를 입력하면 AI가 오늘 먹으면 좋을 음식을 추천해준다.
 - **서비스 접속 주소** : [https://hyojeong-02.github.io/duksung_lhj_AI_Project_Front_End/](https://hyojeong-02.github.io/duksung_lhj_AI_Project_Front_End/)
 
 
